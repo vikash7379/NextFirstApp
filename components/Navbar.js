@@ -3,10 +3,10 @@ import Link from  "next/link"
 
 const Navbar = () => {
   return (
-    <div>
-      <nav className="menu-bar">
-        <ul>
-          <li>
+    <>
+      <nav className="">
+        <ul className="flex gap-5 bg-red-50 text-red-600 w-fit mx-auto px-10 py-3 my-10 rounded-full">
+          <li >
             <Link href="/">Home</Link>
           </li>
           <li>
@@ -23,7 +23,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-    </div>
+    </>
   );
 };
 

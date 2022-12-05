@@ -38,12 +38,13 @@ const BlogsData = ({data}) => {
   const {id,title,body} = data;
 
   return (
-    <div className='container'>
+    <div className='w-2/3 text-center m-auto'>
       <SEO pageTitle={`FirstAPP - Blogs -${id}`} pageDescription="d" />
 
-      <h1>This is Detailed <span>Blogs</span>.</h1>
-      <h2> {id}. {title} </h2>
-      <h4 className='bg'>{body}</h4>
+      <h1 className='text-3xl mb-5 text-orange-400'>This is Detailed <span className='text-sky-500'>Blogs.</span></h1>
+      <h2 className='text-xl text-start mb-5 text-purple-400'> {id}. {title} </h2>
+      <h4 className='text-start text-2xl font-serif text-sky-500'> About</h4>
+      <h4 className='bg text-start text-rose-500 text-lg'>{body}</h4>
     </div>
   )
 }
